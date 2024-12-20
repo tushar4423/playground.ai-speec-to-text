@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio Transcription Demo</title>
+</head>
+<body>
+    <h1>Audio Transcription Demo</h1>
+    
+    <p>This demo allows you to transcribe an audio file:</p>
+    
+    <audio controls>
+        <source src="https://int.clouddialer.in/RECORDINGS/MP3/20240613-035402_8705740692-all.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <br><br>
+    
+    <form action="/submit" method="post">
+        <input type="hidden" name="file_url" value="https://int.clouddialer.in/RECORDINGS/MP3/20240613-035402_8705740692-all.mp3">
+        <button type="submit">Transcribe Audio</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submitted Link</title>
+</head>
+<body>
+    <h2>Submitted Link:</h2>
+    <p>
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $link = $_POST['link'];
+            echo "You submitted the following link: <a href='$link'>$link</a>";
+        } else {
+            echo "No link submitted.";
+        }
+        ?>
+    </p>
+    <p><a href="index.html">Back to submission page</a></p>
+</body>
+</html>

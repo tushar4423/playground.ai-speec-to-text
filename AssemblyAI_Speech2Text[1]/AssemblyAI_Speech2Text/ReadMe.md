@@ -1,0 +1,1 @@
+http://192.168.0.190/admin/transcribe.php?file=http://192.168.0.190/RECORDINGS/MP3/20240627-170513_7727072632_9001-all.mp3

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transcription</title>
+</head>
+<body>
+    <div>
+        <h2>Transcription Result:</h2>
+        {% if transcript %}
+            <p>{{ transcript }}</p>
+        {% elif error %}
+            <p>Error: {{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
